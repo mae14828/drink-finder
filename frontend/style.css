@@ -1,0 +1,8 @@
+html * {
+    box-sizing:border-box;
+}
+.sagamihara-map{
+   width:70%;
+   max-width:400px;
+   margin:0 auto;
+}
