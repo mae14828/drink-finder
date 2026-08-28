@@ -1,6 +1,20 @@
 html * {
     box-sizing:border-box;
 }
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+    background-color:rgb(226, 255, 230);
+}
+
+body {
+    padding-top:80px;
+}
+
 .sagamihara-map{
    width:70%;
    max-width:400px;
