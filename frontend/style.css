@@ -18,6 +18,7 @@ header {
     justify-content:center;
     margin: 16px 108px 16px 16px;
 }
+
 @media(max-width: 767px){
     .map-and-nav-container{
         flex-direction: column;
@@ -27,6 +28,10 @@ header {
 
 body {
     padding-top:80px;
+}
+
+h3 {
+    scroll-margin-top: 108px;
 }
 
 .sagamihara-map{
