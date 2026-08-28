@@ -11,6 +11,20 @@ header {
     background-color:rgb(226, 255, 230);
 }
 
+.map-and-nav-container{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    justify-content:center;
+    margin: 16px 108px 16px 16px;
+}
+@media(max-width: 767px){
+    .map-and-nav-container{
+        flex-direction: column;
+        align-items: left;
+    }
+}
+
 body {
     padding-top:80px;
 }
