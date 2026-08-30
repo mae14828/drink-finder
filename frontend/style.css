@@ -1,3 +1,7 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     /*移動先がヘッダーで隠れないように、表示領域の上のほうに空間を作る*/
