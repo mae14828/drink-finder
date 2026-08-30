@@ -1,5 +1,13 @@
-html * {
-    box-sizing:border-box;
+html {
+    scroll-behavior: smooth;
+    /*移動先がヘッダーで隠れないように、表示領域の上のほうに空間を作る*/
+    scroll-padding-top: 108px;
+}
+/*ユーザーがアニメーションを減らす設定にしていた時用*/
+@media(prefers-reduced-motion){
+    html{
+        scroll-behavior: auto;
+    }
 }
 
 header {
@@ -28,10 +36,6 @@ header {
 
 body {
     padding-top:80px;
-}
-
-h3 {
-    scroll-margin-top: 108px;
 }
 
 .sagamihara-map{
