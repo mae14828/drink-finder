@@ -119,6 +119,20 @@ nav li a {
     box-shadow: 0 4px 10px rgba(55,99,72,0.05);
 }
 
+nav li a::before {
+    content:"";
+    width: 4px;
+    height: 8px; 
+    border-radius: 20%;
+    background: linear-gradient(180deg, #a7dab4, #6ea77d);
+}
+
+nav li a::after{
+    content:"→";
+    color: var(--green-700);
+    font-size: 0.9rem;
+}
+
 .location-card{
     margin: 0 0 12px;
     padding: 10px 12px 8px;
