@@ -38,6 +38,14 @@ header {
     background-color:rgb(226, 255, 230);
 }
 
+header h1 {
+    color: var(--green-700);
+}
+
+main h2, footer h2{
+    color: var(--green-900);
+}
+
 .map-and-nav-container{
     display:flex;
     align-items:flex-start;
@@ -54,7 +62,12 @@ header {
 }
 
 body {
-    padding-top:80px;
+    margin: 0;
+    padding-top:88px;
+    font-family: "Segoe UI","Yu Gothic Medium","Hiragino Kaku Gothic ProN",sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, #f6fff6 0%, #edf8f0 100%);
+    line-height: 1.7;
 }
 
 .sagamihara-map{
