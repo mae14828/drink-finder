@@ -92,3 +92,13 @@ body {
    max-width:400px;
    margin:0 auto;
 }
+
+.location-card{
+    margin: 0 0 12px;
+    padding: 10px 12px 8px;
+    background: rgba(255,255,255,0.56);
+    border: 1px solid var(--line);
+    border-left: 6px solid rgba(126,181,141,0.8);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
