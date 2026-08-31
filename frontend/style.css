@@ -14,6 +14,21 @@ html {
     }
 }
 
+:root {
+    --green-50: #f4fbf5;
+    --green-100: #e6f6ea;
+    --green-200: #d7f0db;
+    --green-300: #c4e5c7;
+    --green-500: #7eb58d;
+    --green-700: #2f6a4d;
+    --green-900: #1f3f33;
+    --cream: #fffdf7;
+    --text: #244d3d;
+    --muted: #5d766a;
+    --line: rgba(53,99,72,0.16);
+    --shadow: 0 12px 28px rgba(43,82,59,0.08);
+}
+
 header {
     position:fixed;
     top:0;
