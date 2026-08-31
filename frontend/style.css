@@ -133,6 +133,17 @@ nav li a::after{
     font-size: 0.9rem;
 }
 
+nav li a:hover, nav li a:focus-visible {
+    transform: translateY(-1px);
+    border-color: rgba(53,99,72,0.28);
+    box-shadow: 0 10px 18px rgba(55, 99, 72, 0.08);
+    text-decoration: none;
+}
+
+nav li a:active {
+    transform: translateY(2px);
+}
+
 .location-card{
     margin: 0 0 12px;
     padding: 10px 12px 8px;
