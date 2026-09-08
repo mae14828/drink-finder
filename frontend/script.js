@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('hamburger');
-//const sideMenu = document.getElementById('side-menu');
+const sideMenu = document.getElementById('side-menu');
 
 hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('is-active');
