@@ -49,13 +49,27 @@ header h1 {
     /*border: 2px solid red;とかで大枠確認しつつ理解した！*/
 }
 
-main,footer{
+.hamburger {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    padding: 0;
+}
+
+main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px 40px;
 }
 
-main h2, footer h2{
+main h2 {
     margin: 0 0 18px;
     padding-bottom: 10px;
     font-size: clamp(1.5rem, 2vw, 2.2rem);
