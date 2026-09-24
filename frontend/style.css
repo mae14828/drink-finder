@@ -238,19 +238,18 @@ nav li a:active {
 
 .location-card{
     margin: 0 0 12px;
-    padding: 10px 12px 8px;
+    padding: 10px 12px 12px;
     background: rgba(255,255,255,0.56);
     border: 1px solid var(--line);
-    border-left: 6px solid rgba(126,181,141,0.8);
-    border-radius: 8px;
+    border-left: 3px solid rgba(4, 79, 29, 0.8);
+    border-radius: 4px;
     box-shadow: var(--shadow);
 }
 
 .location-card h3 {
+    border-bottom: 1px solid var(--line);
     margin: 0 0 6px;
-    padding: 6px 8px;
-    border-radius: 8px;
-    background: linear-gradient(180deg, rgba(233,247,236,0.9),rgba(217,238,220,0.7));
+    padding: 0 4px;
     color: var(--green-900);
     font-size: clamp(0.95rem, 1.2vw, 1.15rem);
 }
