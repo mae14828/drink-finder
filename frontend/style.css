@@ -141,9 +141,6 @@ header h1 {
     border: none;
     box-shadow: none;
     border-radius: 0;
-
-    background: var(--green-50);
-    border: 1px dashed var(--green-300);
 }
 .side-menu a::before,
 .side-menu a::after {
