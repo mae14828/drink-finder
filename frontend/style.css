@@ -232,6 +232,8 @@ nav li a:hover, nav li a:focus-visible {
 .side-menu nav li a:hover, .side-menu nav li a:focus-visible {
     transform: none;
     box-shadow: none;
+    color: var(--text);
+    text-decoration: underline;
 }
 
 nav li a:active {
