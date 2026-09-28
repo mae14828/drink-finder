@@ -229,6 +229,11 @@ nav li a:hover, nav li a:focus-visible {
     text-decoration: none;
 }
 
+.side-menu nav li a:hover, .side-menu nav li a:focus-visible {
+    transform: none;
+    box-shadow: none;
+}
+
 nav li a:active {
     transform: translateY(2px);
 }
