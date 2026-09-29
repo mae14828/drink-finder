@@ -230,6 +230,7 @@ nav li a:hover, nav li a:focus-visible {
 }
 
 .side-menu nav li a {
+    display: inline-flex;
     padding: 0;
 }
 
