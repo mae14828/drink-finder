@@ -292,7 +292,11 @@ nav li a:active {
 
 .recommendations p {
     font-size: 0.9rem;
+    margin-top: 0;
 }
 .recommendations h3 {
     font-size: 1.05rem;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--line);
 }
