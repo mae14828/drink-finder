@@ -290,3 +290,9 @@ nav li a:active {
     }
 }
 
+.recommendations p {
+    font-size: 0.9rem;
+}
+.recommendations h3 {
+    font-size: 1.05rem;
+}
