@@ -198,6 +198,10 @@ nav ul {
     gap: 4px;
 }
 
+nav[aria-label="棟を選択"] ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 nav li a {
     display: flex;
     align-items: center;
