@@ -52,5 +52,48 @@ const vendingMachines = [
       { name: "Mets ENERGY", price: 190, category: "エナジードリンク" } 
         ]
 
+    },
+    {
+         id: 2,
+        building: "D棟",
+        floor: 2,
+        locationDetail: "エスカレーター近く",
+
+        payment: {
+            cash: true,
+            ic: true,
+            touch: true,
+            qr: true,
+        },
+        drinks: [
+            // 水
+            { name: "おいしい水 天然水 600ml", price: 110, category: "水" },
+
+            // お茶
+            { name: "おーいお茶", price: 150, category: "お茶" },
+            { name: "十六茶 麦茶", price: 130, category: "お茶" },
+
+            // コーヒー
+            { name: "WONDA モーニングショット", price: 130, category: "コーヒー" },
+            { name: "WONDA 金の微糖", price: 130, category: "コーヒー" },
+            { name: "WONDA ブラック", price: 130, category: "コーヒー" },
+            { name: "WONDA 特製カフェオレ", price: 130, category: "コーヒー" },
+            { name: "WONDA コクのブラック", price: 160, category: "コーヒー" },
+            { name: "WONDA モーニングアメリカーノ ブラック", price: 160, category: "コーヒー" },
+            { name: "WONDA モーニングアメリカーノ ラテ", price: 180, category: "コーヒー" },
+
+            // 炭酸
+            { name: "ウィルキンソン タンサン", price: 130, category: "炭酸" },
+            { name: "ドデカミン ストロング", price: 140, category: "炭酸" },
+            { name: "カルピスソーダ オレンジ", price: 130, category: "炭酸" },
+
+            // ジュース
+            { name: "ウェルチ 濃いぶどう", price: 150, category: "ジュース" },
+            { name: "カルピスウォーター", price: 150, category: "ジュース" },
+            { name: "完熟もも カルピス", price: 140, category: "ジュース" },
+
+            // エナジードリンク
+            { name: "モンスターエナジー", price: 210, category: "エナジードリンク" },
+        ]
     }
 ]
