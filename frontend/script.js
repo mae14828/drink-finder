@@ -54,7 +54,7 @@ const vendingMachines = [
 
     },
     {
-         id: 2,
+        id: 2,
         building: "D棟",
         floor: 2,
         locationDetail: "エスカレーター近く",
@@ -95,5 +95,51 @@ const vendingMachines = [
             // エナジードリンク
             { name: "モンスターエナジー", price: 210, category: "エナジードリンク" },
         ]
+    },
+    {
+        id: 3,
+        building: "E棟(1)",
+        floor: 2,
+        locationDetail: "",
+
+        payment: {
+            cash: true,
+            ic: true,
+            touch: true,
+            qr: true,
+        },
+        drinks: [
+            // 水
+            { name: "サントリー 天然水", price: 120, category: "水" },
+
+            // お茶
+            { name: "伊右衛門（小）", price: 130, category: "お茶" },
+            { name: "伊右衛門", price: 140, category: "お茶" },
+            { name: "GREEN DA・KA・RA やさしい麦茶", price: 130, category: "お茶" },
+
+            // コーヒー
+            { name: "ワンダ モーニングショット", price: 120, category: "コーヒー" },
+            { name: "クラフトボス カフェラテ（ミニ）", price: 150, category: "コーヒー" },
+            { name: "プレミアムボス ブラック", price: 160, category: "コーヒー" },
+            { name: "ボス 無糖ブラック", price: 120, category: "コーヒー" },
+            { name: "ボス レインボーマウンテンブレンド", price: 120, category: "コーヒー" },
+            { name: "ボス 贅沢微糖", price: 120, category: "コーヒー" },
+            { name: "ボス アイスコーヒー", price: 130, category: "コーヒー" },
+            { name: "UCC BLACK無糖", price: 120, category: "コーヒー" },
+
+            // 炭酸・ジュース・その他
+            { name: "マウンテンデュー", price: 130, category: "炭酸" },
+            { name: "MATCH", price: 150, category: "炭酸" },
+            { name: "伊右衛門 京都レモネード", price: 160, category: "ジュース" },
+            { name: "なっちゃんりんご", price: 140, category: "ジュース" },
+            { name: "飲むヨーグレット", price: 140, category: "ジュース" },
+
+            // スポーツ・エナジー
+            { name: "ポカリスエット", price: 160, category: "スポーツ" },
+            { name: "ドデカミン ストロング", price: 130, category: "エナジードリンク" },
+            { name: "オロナミンC", price: 120, category: "エナジードリンク" },
+            { name: "レッドブル", price: 200, category: "エナジードリンク" },
+            { name: "モンスターエナジー", price: 200, category: "エナジードリンク" }
+
     }
 ]
