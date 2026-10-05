@@ -140,6 +140,6 @@ const vendingMachines = [
             { name: "オロナミンC", price: 120, category: "エナジードリンク" },
             { name: "レッドブル", price: 200, category: "エナジードリンク" },
             { name: "モンスターエナジー", price: 200, category: "エナジードリンク" }
-
+        ]
     }
 ]
