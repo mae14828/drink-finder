@@ -151,23 +151,23 @@ nameButtons.forEach(function(button){
     button.addEventListener('click',function(){
         const targetName = this.getAttribute('data-name');
         
-        filterByCategory(targetName);
+        filterByName(targetName);
 
     });
 });
 //絞り込みを行う関数
-function filterByCategory(category){
+function filterByName(name){
     const matchedMachines = vendingMachines.filter(function(machine){
         return machine.drinks.some(function(drink){
-            return drink.category === category;
+            return drink.name === name;
         });
     });
-      displayResults(matchedMachines,category);
+      displayResults(matchedMachines,name);
 }
 //結果を表示する関数
-function displayResults(machines, category){
+function displayResults(machines, name){
     
-    let html = `<h4>「${category}」がある自販機（${machines.length}件）</h4><ul>`;
+    let html = `<h4>「${name}」がある自販機（${machines.length}件）</h4><ul>`;
 
     machines.forEach(function(machine){
         html += `
