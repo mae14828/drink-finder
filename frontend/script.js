@@ -144,14 +144,14 @@ const vendingMachines = [
     }
 ]
 
-const categoryButtons = document.querySelectorAll('.cat-btn');
+const nameButtons = document.querySelectorAll('.name-btn');
 const searchResults = document.getElementById('search-results');
 
-categoryButtons.forEach(function(button){
+nameButtons.forEach(function(button){
     button.addEventListener('click',function(){
-        const targetCategory = this.getAttribute('data-category');
+        const targetName = this.getAttribute('data-name');
         
-        filterByCategory(targetCategory);
+        filterByCategory(targetName);
 
     });
 });
