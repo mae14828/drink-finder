@@ -150,15 +150,8 @@ const searchResults = document.getElementById('search-results');
 categoryButtons.forEach(function(button){
     button.addEventListener('click',function(){
         const targetCategory = this.getAttribute('data-category');
-        console.log("選んだカテゴリ: " + targetCategory);
+        
+        filterBycategory(targetCategory);
 
-        const matchedMachines = vendingMachines.filter(function(machine){
-            // その自販機の drinks の中に、一つでも（some）カテゴリが一致する飲み物があるか判定
-            return machine.drinks.some(function(drink){
-                return drink.category === targetCategory;
-            });
-        });
-        console.log("見つかった自販機の数: " + matchedMachines.length);
-        console.log(matchedMachines);
     });
 });
