@@ -151,7 +151,7 @@ categoryButtons.forEach(function(button){
     button.addEventListener('click',function(){
         const targetCategory = this.getAttribute('data-category');
         
-        filterBycategory(targetCategory);
+        filterByCategory(targetCategory);
 
     });
 });
@@ -162,5 +162,12 @@ function filterByCategory(category){
             return drink.category === category;
         });
     });
+      displayResults(matchedMachines,category);
+}
+//結果を表示する関数
+function displayResults(machines, category){
+    
+    let html = `<h4>「${category}」がある自販機（${machines.length}件）</h4>`;
 
+    searchResults.innerHTML = html;
 }
