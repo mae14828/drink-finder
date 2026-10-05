@@ -143,3 +143,13 @@ const vendingMachines = [
         ]
     }
 ]
+
+const categoryButtons = document.querySelectorAll('.cat-btn');
+const searchResults = document.getElementById('search-results');
+
+categoryButtons.forEach(function(button){
+    button.addEventListener('click',function(){
+        const targetCategory = this.getAttribute('data-category');
+        console.log("選んだカテゴリ: " + targetCategory);
+    });
+});
