@@ -155,3 +155,12 @@ categoryButtons.forEach(function(button){
 
     });
 });
+//絞り込みを行う関数
+function filterByCategory(category){
+    const matchedMachines = vendingMachines.filter(function(machine){
+        return machine.drinks.some(function(drink){
+            return drink.category === category;
+        });
+    });
+
+}
