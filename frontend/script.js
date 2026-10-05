@@ -167,15 +167,15 @@ function filterByCategory(category){
 //結果を表示する関数
 function displayResults(machines, category){
     
-    let html = `<h4>「${category}」がある自販機（${machines.length}件）</h4>`;
+    let html = `<h4>「${category}」がある自販機（${machines.length}件）</h4><ul>`;
 
     machines.forEach(function(machine){
         html += `
-        <div>
-            <p>${machine.building}${machine.floor}階${machine.locationDetail}</p>
-        </div>
+        <li>
+            ${machine.building}${machine.floor}階${machine.locationDetail}
+        </li>
         `;
     });
-
+    html += `</ul>`;
     searchResults.innerHTML = html;
 }
