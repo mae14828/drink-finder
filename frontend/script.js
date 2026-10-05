@@ -169,5 +169,13 @@ function displayResults(machines, category){
     
     let html = `<h4>「${category}」がある自販機（${machines.length}件）</h4>`;
 
+    machines.forEach(function(machine){
+        html += `
+        <div>
+            <p>${machine.building}${machine.floor}階${machine.locationDetail}</p>
+        </div>
+        `;
+    });
+
     searchResults.innerHTML = html;
 }
