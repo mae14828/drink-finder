@@ -156,13 +156,16 @@ nameButtons.forEach(function(button){
     });
 });
 //絞り込みを行う関数
-function filterByName(name){
+function filterByName(keyword){
+    const lowerKeyword = keyword.toLowerCase();
+
     const matchedMachines = vendingMachines.filter(function(machine){
         return machine.drinks.some(function(drink){
-            return drink.name === name;
+            //飲み物の名前も小文字にして、キーワードがあるかを確認
+            return drink.name.toLowerCase().includes(lowerKeyword);
         });
     });
-      displayResults(matchedMachines,name);
+      displayResults(matchedMachines, keyword);
 }
 //結果を表示する関数
 function displayResults(machines, name){
