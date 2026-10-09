@@ -98,9 +98,9 @@ const vendingMachines = [
     },
     {
         id: 3,
-        building: "E棟(1)",
+        building: "E棟",
         floor: 2,
-        locationDetail: "",
+        locationDetail: "(1)",
 
         payment: {
             cash: true,
@@ -140,6 +140,48 @@ const vendingMachines = [
             { name: "オロナミンC", price: 120, category: "エナジードリンク" },
             { name: "レッドブル", price: 200, category: "エナジードリンク" },
             { name: "モンスターエナジー", price: 200, category: "エナジードリンク" }
+        ]
+    },
+    {
+        id: 4,
+        building: "E棟",
+        floor: 2,
+        locationDetail: "(2)",
+
+        payment: {
+            cash: true,
+            ic: true,
+            touch: true,
+            qr: true,
+        },
+        drinks: [
+            // 水
+            { name: "富士山麓のおいしい天然水 590ml", price: 120, category: "水" },
+
+            // お茶・紅茶
+            { name: "伊達麦茶", price: 140, category: "お茶" },
+            { name: "にっぽん烏龍", price: 140, category: "お茶" },
+            { name: "アイスティー 微糖", price: 140, category: "紅茶" },
+            { name: "レモンティー 微糖", price: 140, category: "紅茶" },
+            { name: "午後の紅茶 ミルクティー", price: 140, category: "紅茶" },
+
+            // コーヒー
+            { name: "BIZ TIME 冴えるBLACK", price: 170, category: "コーヒー" },
+            { name: "ポッカコーヒー", price: 130, category: "コーヒー" },
+            { name: "ブラックコーヒー", price: 140, category: "コーヒー" },
+            { name: "黒糖ミルクコーヒー", price: 170, category: "コーヒー" },
+
+            // 炭酸・ジュース・その他
+            { name: "キレートレモン", price: 170, category: "ジュース" },
+            { name: "キレートレモン（缶）", price: 130, category: "ジュース" },
+            { name: "レモンの雫", price: 130, category: "ジュース" },
+            { name: "ブルーハワイ ソーダ", price: 120, category: "炭酸" },
+            { name: "津軽のりんご", price: 140, category: "ジュース" },
+            { name: "マッチ MATCH", price: 130, category: "炭酸" },
+
+            // スポーツ・エナジー
+            { name: "レッドブル", price: 210, category: "エナジードリンク" },
+            { name: "SPORTS WATER", price: 140, category: "スポーツ" }
         ]
     }
 ]
