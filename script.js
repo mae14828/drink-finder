@@ -5,3 +5,222 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('is-active');
     sideMenu.classList.toggle('is-active');
 });
+
+const vendingMachines = [
+    {
+        id: 1,
+        building: "D棟",
+        floor: 1,
+        locationDetail: "",
+
+        payment: {
+            cash: true,
+            ic: true,
+            touch: true,
+            qr: false,
+        },
+        drinks: [
+      // 水
+      { name: "キリン 天然水", price: 120, category: "水" }, 
+
+      // お茶
+      { name: "生茶", price: 150, category: "お茶" }, 
+      { name: "生茶 麦茶", price: 130, category: "お茶" }, 
+      { name: "生茶 ほうじ茶（ミニ）", price: 130, category: "お茶" }, 
+      { name: "午後の紅茶 おいしい無糖", price: 150, category: "お茶" }, 
+      { name: "午後の紅茶 ミルクティー", price: 180, category: "紅茶" }, 
+      { name: "午後の紅茶 レモンティー", price: 180, category: "紅茶" }, 
+      { name: "午後の紅茶 FRUITS", price: 170, category: "紅茶" }, 
+      { name: "午後の紅茶 ミルクティー（ミニ）", price: 140, category: "紅茶" }, 
+      { name: "午後の紅茶 レモンティー（ミニ）", price: 140, category: "紅茶" }, 
+
+      // コーヒー
+      { name: "FIRE BLACK", price: 160, category: "コーヒー" },
+      { name: "FIRE BLACK（缶）", price: 150, category: "コーヒー" }, 
+
+      // 炭酸・ジュース・その他
+      { name: "キリンレモン", price: 130, category: "炭酸" }, 
+      { name: "グレフルスカッシュ", price: 140, category: "炭酸" }, 
+      { name: "レモンスカッシュ", price: 140, category: "炭酸" },
+      { name: "iMUSE ヨーグルトテイスト", price: 170, category: "ジュース" }, 
+      { name: "iMUSE FRUITS", price: 170, category: "ジュース" },
+      { name: "小岩井 ミルクとココア", price: 140, category: "ジュース" }, 
+
+      // スポーツ・エナジー
+      { name: "KIRIN LOVES SPORTS", price: 140, category: "スポーツ" }, 
+      { name: "アミノサプリ", price: 140, category: "スポーツ" }, 
+      { name: "Mets ENERGY", price: 190, category: "エナジードリンク" } 
+        ]
+
+    },
+    {
+        id: 2,
+        building: "D棟",
+        floor: 2,
+        locationDetail: "エスカレーター近く",
+
+        payment: {
+            cash: true,
+            ic: true,
+            touch: true,
+            qr: true,
+        },
+        drinks: [
+            // 水
+            { name: "おいしい水 天然水 600ml", price: 110, category: "水" },
+
+            // お茶
+            { name: "おーいお茶", price: 150, category: "お茶" },
+            { name: "十六茶 麦茶", price: 130, category: "お茶" },
+
+            // コーヒー
+            { name: "WONDA モーニングショット", price: 130, category: "コーヒー" },
+            { name: "WONDA 金の微糖", price: 130, category: "コーヒー" },
+            { name: "WONDA ブラック", price: 130, category: "コーヒー" },
+            { name: "WONDA 特製カフェオレ", price: 130, category: "コーヒー" },
+            { name: "WONDA コクのブラック", price: 160, category: "コーヒー" },
+            { name: "WONDA モーニングアメリカーノ ブラック", price: 160, category: "コーヒー" },
+            { name: "WONDA モーニングアメリカーノ ラテ", price: 180, category: "コーヒー" },
+
+            // 炭酸
+            { name: "ウィルキンソン タンサン", price: 130, category: "炭酸" },
+            { name: "ドデカミン ストロング", price: 140, category: "炭酸" },
+            { name: "カルピスソーダ オレンジ", price: 130, category: "炭酸" },
+
+            // ジュース
+            { name: "ウェルチ 濃いぶどう", price: 150, category: "ジュース" },
+            { name: "カルピスウォーター", price: 150, category: "ジュース" },
+            { name: "完熟もも カルピス", price: 140, category: "ジュース" },
+
+            // エナジードリンク
+            { name: "モンスターエナジー", price: 210, category: "エナジードリンク" },
+        ]
+    },
+    {
+        id: 3,
+        building: "E棟",
+        floor: 2,
+        locationDetail: "(1)",
+
+        payment: {
+            cash: true,
+            ic: true,
+            touch: true,
+            qr: true,
+        },
+        drinks: [
+            // 水
+            { name: "サントリー 天然水", price: 120, category: "水" },
+
+            // お茶
+            { name: "伊右衛門（小）", price: 130, category: "お茶" },
+            { name: "伊右衛門", price: 140, category: "お茶" },
+            { name: "GREEN DA・KA・RA やさしい麦茶", price: 130, category: "お茶" },
+
+            // コーヒー
+            { name: "ワンダ モーニングショット", price: 120, category: "コーヒー" },
+            { name: "クラフトボス カフェラテ（ミニ）", price: 150, category: "コーヒー" },
+            { name: "プレミアムボス ブラック", price: 160, category: "コーヒー" },
+            { name: "ボス 無糖ブラック", price: 120, category: "コーヒー" },
+            { name: "ボス レインボーマウンテンブレンド", price: 120, category: "コーヒー" },
+            { name: "ボス 贅沢微糖", price: 120, category: "コーヒー" },
+            { name: "ボス アイスコーヒー", price: 130, category: "コーヒー" },
+            { name: "UCC BLACK無糖", price: 120, category: "コーヒー" },
+
+            // 炭酸・ジュース・その他
+            { name: "マウンテンデュー", price: 130, category: "炭酸" },
+            { name: "MATCH", price: 150, category: "炭酸" },
+            { name: "伊右衛門 京都レモネード", price: 160, category: "ジュース" },
+            { name: "なっちゃんりんご", price: 140, category: "ジュース" },
+            { name: "飲むヨーグレット", price: 140, category: "ジュース" },
+
+            // スポーツ・エナジー
+            { name: "ポカリスエット", price: 160, category: "スポーツ" },
+            { name: "ドデカミン ストロング", price: 130, category: "エナジードリンク" },
+            { name: "オロナミンC", price: 120, category: "エナジードリンク" },
+            { name: "レッドブル", price: 200, category: "エナジードリンク" },
+            { name: "モンスターエナジー", price: 200, category: "エナジードリンク" }
+        ]
+    },
+    {
+        id: 4,
+        building: "E棟",
+        floor: 2,
+        locationDetail: "(2)",
+
+        payment: {
+            cash: true,
+            ic: true,
+            touch: true,
+            qr: true,
+        },
+        drinks: [
+            // 水
+            { name: "富士山麓のおいしい天然水 590ml", price: 120, category: "水" },
+
+            // お茶・紅茶
+            { name: "伊達麦茶", price: 140, category: "お茶" },
+            { name: "にっぽん烏龍", price: 140, category: "お茶" },
+            { name: "アイスティー 微糖", price: 140, category: "紅茶" },
+            { name: "レモンティー 微糖", price: 140, category: "紅茶" },
+            { name: "午後の紅茶 ミルクティー", price: 140, category: "紅茶" },
+
+            // コーヒー
+            { name: "BIZ TIME 冴えるBLACK", price: 170, category: "コーヒー" },
+            { name: "ポッカコーヒー", price: 130, category: "コーヒー" },
+            { name: "ブラックコーヒー", price: 140, category: "コーヒー" },
+            { name: "黒糖ミルクコーヒー", price: 170, category: "コーヒー" },
+
+            // 炭酸・ジュース・その他
+            { name: "キレートレモン", price: 170, category: "ジュース" },
+            { name: "キレートレモン（缶）", price: 130, category: "ジュース" },
+            { name: "レモンの雫", price: 130, category: "ジュース" },
+            { name: "ブルーハワイ ソーダ", price: 120, category: "炭酸" },
+            { name: "津軽のりんご", price: 140, category: "ジュース" },
+            { name: "マッチ MATCH", price: 130, category: "炭酸" },
+
+            // スポーツ・エナジー
+            { name: "レッドブル", price: 210, category: "エナジードリンク" },
+            { name: "SPORTS WATER", price: 140, category: "スポーツ" }
+        ]
+    }
+]
+
+const nameButtons = document.querySelectorAll('.name-btn');
+const searchResults = document.getElementById('search-results');
+
+nameButtons.forEach(function(button){
+    button.addEventListener('click',function(){
+        const targetName = this.getAttribute('data-name');
+        
+        filterByName(targetName);
+
+    });
+});
+//絞り込みを行う関数
+function filterByName(keyword){
+    const lowerKeyword = keyword.toLowerCase();
+
+    const matchedMachines = vendingMachines.filter(function(machine){
+        return machine.drinks.some(function(drink){
+            //飲み物の名前も小文字にして、キーワードがあるかを確認
+            return drink.name.toLowerCase().includes(lowerKeyword);
+        });
+    });
+      displayResults(matchedMachines, keyword);
+}
+//結果を表示する関数
+function displayResults(machines, name){
+    
+    let html = `<h4>「${name}」がある自販機（${machines.length}件）</h4><ul>`;
+
+    machines.forEach(function(machine){
+        html += `
+        <li>
+            ${machine.building}${machine.floor}階${machine.locationDetail}
+        </li>
+        `;
+    });
+    html += `</ul>`;
+    searchResults.innerHTML = html;
+}
